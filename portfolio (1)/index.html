@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rao Umair — Multi-Site CRM Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Hero section is loaded from sections/hero.html -->
+  <div id="hero-slot"></div>
+
+  <main>
+    <div class="wrap">
+
+      <div class="section-head"><h2>Experience</h2></div>
+      <div class="companies">
+        <div class="co-card">
+          <div class="co-name">EMENC PVT LTD</div>
+          <div class="co-role">Backend Developer (Laravel)</div>
+          <div class="co-period">2025 — Present</div>
+        </div>
+        <div class="co-card">
+          <div class="co-name">The Xpert</div>
+          <div class="co-role">Backend Developer (Laravel)</div>
+          <div class="co-period">2024 — 2025</div>
+        </div>
+      </div>
+
+      <div class="section-head"><h2>Client Network</h2><span class="count">26 domains · click a card</span></div>
+      <div id="clusters"></div>
+
+      <!-- Project section is loaded from sections/project.html -->
+      <div id="project-slot"></div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>Garden Town, Lahore, Pakistan</span>
+      <span>raou4226@gmail.com · 03000971153</span>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="overlay">
+    <div class="modal">
+      <div class="mh"><h3 id="m-name"></h3><button class="close" id="m-close">✕</button></div>
+      <div class="cluster-of" id="m-cluster"></div>
+      <div class="row"><span class="k">Domain</span><span class="v" id="m-domain"></span></div>
+      <div class="row"><span class="k">Index</span><span class="v" id="m-idx"></span></div>
+      <div class="row"><span class="k">Status</span><span class="v" style="color:#9BE564">● Monitored</span></div>
+      <a class="visit" id="m-visit" href="#" target="_blank" rel="noopener">Visit Site ↗</a>
+    </div>
+  </div>
+
+  <script src="js/sites-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
